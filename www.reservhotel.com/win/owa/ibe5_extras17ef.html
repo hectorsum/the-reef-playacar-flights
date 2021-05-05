@@ -590,7 +590,7 @@
         $(xLink).text("View More");
 
       } else {
-        $(xClass).hide().css("height", "200px").css("overflow", "").show(500);
+        $(xClass).hide().css("height", "auto").css("overflow", "").show(500);
         $(xLink).text("View Less");
 
       }
@@ -1989,7 +1989,7 @@
       <div class="top-nav row" style="background: ##f5f5f5 !important;">
         <button class="navbar-toggler pull-xs-left hidden-lg-down-up hidden-md-up" type="button" data-toggle="collapse"
           data-target="#navbar-collapse"><img src="../../ibe5/assets/images/icon_hamburgermenu.png"></button>
-        <div class="travel-summary-box hidden-lg-down-up hidden-md-up">
+        <div class="travel-summary-box hidden-lg-down-up hidden-md-up" style="display:none">
           <span class="close hidden">&times;</span>
           <div class="summary"><span class="travel-sum-icon"><i class="fa fa-lg fa-shopping-cart"></i></span>
             <span>Travel Summary:</span> <span class="summary-total hotel_grand_total">1,722.51 US$</span></div>
@@ -15119,9 +15119,9 @@ business">Business Class
                               <a class="rl-con-103" href="javascript:void(0)"
                                 onclick="toggleTXT('.r-con-103', '.rl-con-103', 70);">View More</a>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 col-content">
-                              <div class="row no-margin-lr">
-                                <div class="col-6 col-sm-6 col-md-4 col-lg-12 col-xl-12 col-content espaciado">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-content">
+                              <div class="row no-margin-lr mb-2 center-content-buttons">
+                                <div class="col-6 col-sm-4 col-md-6 col-lg-12 col-xl-12 col-content espaciado">
                                   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-content price">
                                     100.00
                                   </div>
@@ -15129,15 +15129,13 @@ business">Business Class
                                     per Item
                                   </div>
                                 </div>
-                                <div class="col-6 col-sm-4 col-md-4 col-lg-12 col-xl-12 col-content espaciado btn-s">
-                                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-content">
-                                    <span class="amen-select"><span class="selected hidden">Select</span>&nbsp;<input
-                                        type="checkbox" name="amenity" class="amen_check_class hidden" amen="103"
-                                        id="amen_check_103" amecomm="0" onClick="updateTotal();" value="103/1/100/">
-                                    </span>
-                                    <button type="button" id="button_amen_103" class="btn btn-blue amen_button   "
-                                      onclick="document.getElementById('amen_check_103').checked=!document.getElementById('amen_check_103').checked;updateTotal();toggleText('103');">Select</button>
-                                  </div>
+                                <div class="col-6 col-sm-4 col-md-6 col-lg-12 col-xl-12 col-content espaciado btn-s button-tablet">
+                                  <span class="amen-select"><span class="selected hidden">Select</span>&nbsp;<input
+                                      type="checkbox" name="amenity" class="amen_check_class hidden" amen="103"
+                                      id="amen_check_103" amecomm="0" onClick="updateTotal();" value="103/1/100/">
+                                  </span>
+                                  <button type="button" id="button_amen_103" class="btn btn-blue amen_button   "
+                                    onclick="document.getElementById('amen_check_103').checked=!document.getElementById('amen_check_103').checked;updateTotal();toggleText('103');">Select</button>
                                 </div>
                               </div>
                             </div>

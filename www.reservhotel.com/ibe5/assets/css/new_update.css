@@ -1,0 +1,32 @@
+@media (max-width: 992px) and (min-width: 576px){
+  .img-size2,.col-content{
+    padding: 0 0.5rem !important;
+  }
+  .img-size2{
+    width: 100% !important;
+  }
+  .amen_button{
+    margin:0 !important;
+    width: auto;
+  }
+  .center-content-buttons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .thumb-details .espaciado{
+    margin: 0 !important;
+    margin: 1rem 0 !important;
+  }
+  .button-tablet{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .center-tablet{
+    display:flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
